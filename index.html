@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ullmhú Scrúdaithe — IRS139</title>
+<meta name="description" content="Ulster Irish exam practice: vocabulary, structures, drills and notes for IRS139.">
+<style>
+:root{
+  --bg:#f7f4ed; --panel:#fffdf8; --ink:#1d2320; --soft:#5e6a62; --faint:#8b958e;
+  --line:#e1dccf; --line2:#efeae0;
+  --accent:#14362b; --accent2:#2f6b52; --gold:#9a6b1f; --gold-bg:#fbf3e2;
+  --ok:#2f6b52; --ok-bg:#e8f2ec; --no:#9d3a2f; --no-bg:#fbeae7;
+  --shadow:0 1px 2px rgba(29,35,32,.05), 0 6px 20px rgba(29,35,32,.05);
+  --btnink:#fffdf8;
+  --r:14px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#13161a; --panel:#1b1f24; --ink:#e8e9e6; --soft:#a3aca6; --faint:#78827c;
+    --line:#2b3138; --line2:#242a30;
+    --accent:#9fd4bb; --accent2:#7bbfa2; --gold:#d9b069; --gold-bg:#2a2317;
+    --ok:#7bbfa2; --ok-bg:#1c2a23; --no:#e0897c; --no-bg:#2c1d1b;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.25);
+    --btnink:#12171a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13161a; --panel:#1b1f24; --ink:#e8e9e6; --soft:#a3aca6; --faint:#78827c;
+  --line:#2b3138; --line2:#242a30;
+  --accent:#9fd4bb; --accent2:#7bbfa2; --gold:#d9b069; --gold-bg:#2a2317;
+  --ok:#7bbfa2; --ok-bg:#1c2a23; --no:#e0897c; --no-bg:#2c1d1b;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.25);
+  --btnink:#12171a;
+}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-text-size-adjust:100%}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px 90px}
+header{border-bottom:1px solid var(--line);background:var(--panel)}
+.hd{max-width:900px;margin:0 auto;padding:16px 16px 0;display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--serif);font-size:1.5rem;margin:0;letter-spacing:-.01em;font-weight:600;flex:1;min-width:200px}
+h1 span{color:var(--accent2)}
+.sub{color:var(--soft);font-size:.85rem;margin:2px 0 0}
+h2{font-family:var(--serif);font-size:1.2rem;margin:26px 0 10px;font-weight:600}
+h3{font-size:.98rem;margin:18px 0 6px;font-weight:650}
+.stats{max-width:900px;margin:0 auto;padding:10px 16px 0;display:flex;gap:7px 14px;flex-wrap:wrap;font-size:.8rem;color:var(--soft)}
+.stats b{color:var(--ink);font-variant-numeric:tabular-nums}
+.stats .y{color:var(--ok)}.stats .n{color:var(--no)}
+.rs{appearance:none;-webkit-appearance:none;border:0;background:none;font:inherit;font-size:.78rem;color:var(--faint);cursor:pointer;text-decoration:underline;padding:0;margin:0}
+.rs:hover{color:var(--ink)}
+.sess{font-variant-numeric:tabular-nums;white-space:nowrap}
+.sess .y{color:var(--ok)}.sess .n{color:var(--no)}
+nav{max-width:900px;margin:0 auto;padding:10px 16px 0;display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav button{appearance:none;border:0;background:none;font:inherit;font-size:.9rem;color:var(--soft);padding:9px 13px;border-radius:9px 9px 0 0;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent}
+nav button:hover{color:var(--ink);background:var(--line2)}
+nav button[aria-selected="true"]{color:var(--accent2);border-bottom-color:var(--accent2);font-weight:600}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:16px 0;box-shadow:var(--shadow)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.lbl{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);margin-bottom:4px;font-weight:600}
+select,input[type=text],input[type=search]{font:inherit;font-size:.92rem;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%;min-width:0}
+input:focus,select:focus,button:focus-visible{outline:2px solid var(--accent2);outline-offset:1px}
+.btn{appearance:none;font:inherit;font-size:.92rem;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--accent);background:var(--accent);color:var(--btnink);cursor:pointer}
+.btn.alt{background:var(--panel);color:var(--ink);border-color:var(--line)}
+.btn.sm{padding:6px 11px;font-size:.84rem}
+.btn:disabled{opacity:.45;cursor:default}
+.btn.ok{background:var(--ok);border-color:var(--ok)}
+.btn.no{background:var(--no);border-color:var(--no)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 0}
+.chip{appearance:none;font:inherit;font-size:.8rem;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--soft);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--btnink);font-weight:600}
+.chip.see{border-color:var(--gold);background:var(--gold-bg);color:var(--gold)}
+.ga{font-family:var(--serif);font-size:1.05rem}
+.en{color:var(--soft)}
+.note{font-size:.88rem;color:var(--soft);background:var(--bg);border-left:3px solid var(--line);padding:8px 11px;border-radius:0 8px 8px 0;margin:8px 0 0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:430px;font-size:.9rem}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line2);vertical-align:top}
+th{font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);border-bottom:1px solid var(--line)}
+td:first-child{font-family:var(--serif)}
+.ent{border-bottom:1px solid var(--line2);padding:10px 0}
+.ent:last-child{border-bottom:0}
+.ent .hdr{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;cursor:pointer}
+.ent .hdr .ga{flex:1;min-width:140px}
+.tag{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);border:1px solid var(--line);padding:1px 7px;border-radius:999px;white-space:nowrap}
+.tag.s2{color:var(--gold);border-color:var(--gold)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px 18px;text-align:center;box-shadow:var(--shadow);min-height:168px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.card .q{font-family:var(--serif);font-size:1.5rem;line-height:1.3}
+.card .a{font-size:1.1rem;color:var(--accent2);font-weight:600}
+.meter{height:5px;background:var(--line2);border-radius:999px;overflow:hidden;margin:12px 0}
+.meter i{display:block;height:100%;background:var(--accent2);width:0;transition:width .25s}
+.kbd{font-size:.74rem;color:var(--faint);text-align:center;margin-top:10px}
+.kbd b{font-family:var(--sans);border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--soft)}
+.fb{padding:10px 13px;border-radius:10px;font-size:.92rem;margin:10px 0 0}
+.fb.y{background:var(--ok-bg);color:var(--ok)}
+.fb.n{background:var(--no-bg);color:var(--no)}
+details{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);margin:10px 0;overflow:hidden}
+details>summary{padding:13px 16px;cursor:pointer;font-weight:600;font-family:var(--serif);font-size:1.03rem;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"＋";color:var(--accent2);margin-right:9px;font-weight:400}
+details[open]>summary::before{content:"－"}
+details>div{padding:0 16px 14px}
+.frame{font-family:var(--serif);font-size:.95rem;color:var(--accent2);background:var(--bg);padding:8px 11px;border-radius:9px;margin:0 0 8px}
+.muted{color:var(--faint);font-size:.84rem}
+.big{font-size:1.9rem;font-family:var(--serif);font-variant-numeric:tabular-nums}
+.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.box{background:var(--bg);border:1px solid var(--line2);border-radius:11px;padding:11px 13px}
+.box .lbl{margin:0 0 2px}
+ul{padding-left:20px;margin:6px 0}
+li{margin:3px 0}
+.src{font-size:.74rem;color:var(--faint);margin-top:6px}
+@media(max-width:560px){
+  .card{padding:20px 14px}.card .q{font-size:1.28rem}
+  h1{font-size:1.3rem}.wrap{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="hd">
+    <div style="flex:1;min-width:200px">
+      <h1>Ullmhú <span>Scrúdaithe</span></h1>
+      <p class="sub">IRS139 · Gaeilge Uladh · Seachtain 2 + foclóir</p>
+    </div>
+    <button class="btn alt sm" id="theme" aria-label="Athraigh an téama">◐ Téama</button>
+  </div>
+  <div class="stats" id="stats"></div>
+  <nav id="nav" role="tablist">
+    <button role="tab" data-tab="scrudu" aria-selected="true">Scrúdú</button>
+    <button role="tab" data-tab="cartai" aria-selected="false">Cártaí</button>
+    <button role="tab" data-tab="focloir" aria-selected="false">Foclóir</button>
+    <button role="tab" data-tab="struct" aria-selected="false">Struchtúir</button>
+    <button role="tab" data-tab="notai" aria-selected="false">Nótaí</button>
+  </nav>
+</header>
+
+<div class="wrap">
+
+<!-- ============ SCRÚDÚ ============ -->
+<section id="scrudu">
+  <div class="panel">
+    <div class="row">
+      <div style="flex:2;min-width:190px">
+        <label class="lbl" for="qTopic">Ábhar</label>
+        <select id="qTopic"></select>
+      </div>
+      <div style="flex:1;min-width:110px">
+        <label class="lbl" for="qLen">Fad</label>
+        <select id="qLen">
+          <option value="10">10 gceist</option>
+          <option value="20" selected>20 ceist</option>
+          <option value="40">40 ceist</option>
+          <option value="0">Gach ceann</option>
+        </select>
+      </div>
+      <div><button class="btn" id="qStart">Tosaigh</button></div>
+    </div>
+    <p class="muted" style="margin:10px 0 0" id="qHint">Tá an páipéar bréige claonta i dtreo Sheachtain 2 — na réamhfhocail, má/dá/mura, an modh coinníollach agus na frásaí.</p>
+  </div>
+  <div id="qArea"></div>
+</section>
+
+<!-- ============ CÁRTAÍ ============ -->
+<section id="cartai" hidden>
+  <div class="panel">
+    <div class="row">
+      <div style="flex:2;min-width:170px">
+        <label class="lbl" for="cDeck">Deic</label>
+        <select id="cDeck"></select>
+      </div>
+      <div style="flex:1;min-width:150px">
+        <label class="lbl" for="cDir">Treo</label>
+        <select id="cDir">
+          <option value="ge">Gaeilge → Béarla</option>
+          <option value="eg">Béarla → Gaeilge</option>
+          <option value="mix">Measctha</option>
+        </select>
+      </div>
+      <div><button class="btn" id="cStart">Tosaigh</button></div>
+    </div>
+    <p class="muted" style="margin:10px 0 0">Athbhreithniú spásaithe: cárta ceart → níos faide amach (1, 2, 4, 8, 16 lá); cárta mícheart → ar ais go bosca 0. <button class="rs" id="wipe" style="color:var(--no)">Glan an dul chun cinn ar fad</button></p>
+  </div>
+  <div id="cArea"></div>
+</section>
+
+<!-- ============ FOCLÓIR ============ -->
+<section id="focloir" hidden>
+  <div class="panel">
+    <label class="lbl" for="fQ">Cuardaigh</label>
+    <input type="search" id="fQ" placeholder="focal, brí nó nóta…" autocomplete="off">
+    <div class="chips" id="fCats"></div>
+  </div>
+  <p class="muted" id="fCount"></p>
+  <div class="panel" id="fList"></div>
+</section>
+
+<!-- ============ STRUCHTÚIR ============ -->
+<section id="struct" hidden>
+  <p class="muted" style="margin:16px 0 0">Na patrúin is dóichí a bheidh de dhíth ort. Brúigh <b>Cleacht</b> ar aon cheann le haistriúchán a dhéanamh air.</p>
+  <div id="sList"></div>
+</section>
+
+<!-- ============ NÓTAÍ ============ -->
+<section id="notai" hidden><div id="nList"></div></section>
+
+</div>
+
+<script src="vocab.js"></script>
+<script src="seachtain2.js"></script>
+<script src="struchtuir.js"></script>
+<script>
+(function(){
+"use strict";
+var CATS=window.CATS, VOCAB=window.VOCAB, FIXL=window.FIX||[], S2=window.S2, STRUCT=window.STRUCT;
+
+/* ---------------- storage ---------------- */
+var KEY="scrudu-irs139-v1";
+var S={cards:{},drills:{},day:null,right:0,wrong:0};
+try{var r=localStorage.getItem(KEY); if(r){var p=JSON.parse(r); if(p&&typeof p==="object"){S=Object.assign(S,p); S.cards=S.cards||{}; S.drills=S.drills||{};}}}catch(e){}
+S.right=S.right||0; S.wrong=S.wrong||0;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function today(){var d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+if(S.day!==today()){S.day=today();S.right=0;S.wrong=0;save();}
+/* one place that records a right/wrong, whichever tab it came from */
+function score(ok){ if(ok) S.right++; else S.wrong++; }
+
+/* ---------------- theme ---------------- */
+var tb=document.getElementById("theme");
+try{var th=localStorage.getItem(KEY+"-theme"); if(th)document.documentElement.setAttribute("data-theme",th);}catch(e){}
+tb.onclick=function(){
+  var cur=document.documentElement.getAttribute("data-theme");
+  var dark=window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches;
+  var next=cur?(cur==="dark"?"light":"dark"):(dark?"light":"dark");
+  document.documentElement.setAttribute("data-theme",next);
+  try{localStorage.setItem(KEY+"-theme",next);}catch(e){}
+};
+
+/* ---------------- build the card pool ---------------- */
+var CARDS=[];
+VOCAB.forEach(function(v){ CARDS.push({id:"v|"+v.ga, ga:v.ga, en:v.en, cat:v.cat, note:v.note, see:v.see, noq:v.noq, src:"lst"}); });
+S2.S2VOCAB.forEach(function(a){ CARDS.push({id:"s|"+a[0], ga:a[0], en:a[1], cat:a[2], note:a[3], src:"s2"}); });
+STRUCT.forEach(function(f){ f.rows.forEach(function(rw,i){
+  if(rw[2]==="d") CARDS.push({id:"t|"+f.id+"|"+i, ga:rw[0], en:rw[1], cat:"gram", note:f.note, src:"str", fam:f.title});
+}); });
+// drop exact duplicate headwords across sources
+(function(){var seen={},out=[];CARDS.forEach(function(c){var k=c.ga.toLowerCase();if(!seen[k]){seen[k]=1;out.push(c);}});CARDS=out;})();
+
+var INTERVAL=[0,1,2,4,8,16];
+function st(id){return S.cards[id]||(S.cards[id]={box:0,due:0,seen:0,wrong:0});}
+function dueNow(c){var x=S.cards[c.id];return !x||!x.due||x.due<=Date.now();}
+function grade(id,ok){
+  var x=st(id); x.seen++;
+  if(ok){x.box=Math.min(5,x.box+1);}else{x.box=0;x.wrong++;}
+  x.due=Date.now()+INTERVAL[x.box]*864e5;
+  score(ok); save(); drawStats();
+}
+
+/* ---------------- helpers ---------------- */
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function norm(s){
+  return String(s).toLowerCase()
+    .replace(/[‘’ʼ]/g,"'").replace(/[“”]/g,'"')
+    .replace(/[–—]/g,"-")
+    .replace(/[.,!?;:"]/g,"")
+    .replace(/\s+/g," ").trim();
+}
+function matches(given,answer,alts){
+  var g=norm(given); if(!g) return false;
+  var pool=[answer].concat(alts||[]);
+  for(var i=0;i<pool.length;i++){
+    var a=norm(pool[i]);
+    if(g===a) return true;
+    // allow a slash-alternative inside the model answer
+    if(a.indexOf("/")>-1){
+      var parts=a.split(/\s*\/\s*/);
+      for(var j=0;j<parts.length;j++) if(g===parts[j].trim()) return true;
+    }
+  }
+  return false;
+}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function pick(arr,n){return shuffle(arr).slice(0,n);}
+function tableHTML(heads,rows){
+  var h="<div class='tw'><table><thead><tr>"+heads.map(function(x){return "<th>"+esc(x)+"</th>";}).join("")+"</tr></thead><tbody>";
+  rows.forEach(function(r){h+="<tr>"+r.map(function(c){return "<td>"+(c==null?"":esc(c))+"</td>";}).join("")+"</tr>";});
+  return h+"</tbody></table></div>";
+}
+
+/* ---------------- build the drill pool ---------------- */
+var D=[];
+function addTrans(topic,list,dir){
+  list.forEach(function(x,i){
+    D.push({id:topic+"-t"+i, kind:"trans", topic:topic,
+            prompt:x.en, answer:x.a, alts:x.alts||[], note:x.note||""});
+  });
+}
+addTrans("t4a",S2.T4A);
+addTrans("t4b",S2.T4B);
+addTrans("t7",S2.T7);
+addTrans("t8",S2.T8);
+
+// which preposition carries the cause?
+S2.PREPSET.forEach(function(p,i){
+  if(p.p2){
+    var opts=["as","faoi","le","roimh","i","ar"].filter(function(o){return o!==p.p2;});
+    D.push({id:"prep-c"+i, kind:"mc", topic:"prep",
+      prompt:"Cén réamhfhocal a thagann leis an gcúis? <b>"+esc(p.n)+"</b> "+esc(p.p1)+" X ___ Y <span class='muted'>("+esc(p.en)+")</span>",
+      answer:p.p2, opts:shuffle([p.p2].concat(pick(opts,3))),
+      note:p.n+" "+p.p1+" X "+p.p2+" Y — "+p.ex+" ("+p.exen+")"});
+  }
+  D.push({id:"prep-p"+i, kind:"gap", topic:"prep",
+    prompt:"Cuir Gaeilge air: <b>"+esc(p.exen)+"</b>",
+    answer:p.ex, alts:[], note:p.n+" "+p.p1+(p.p2?(" X "+p.p2+" Y"):"")+(p.gen?" — fonn takes a genitive: tá fonn toitín orm.":"")});
+});
+
+// prepositional pronouns
+Object.keys(S2.PRON).forEach(function(prep){
+  var row=S2.PRON[prep], label=prep==="o"?"ó":prep;
+  Object.keys(row).forEach(function(k){
+    if(/\//.test(row[k])) return;
+    D.push({id:"pron-"+prep+"-"+k, kind:"gap", topic:"pron",
+      prompt:"<b>"+esc(label)+"</b> + <b>"+esc(S2.PRONLABEL[k])+"</b> = ?",
+      answer:row[k], note:label+" — "+Object.keys(row).map(function(q){return row[q];}).join(", ")});
+  });
+});
+
+// má / dá / mura rules
+S2.MARULES.forEach(function(m,i){
+  var all=["má","dá","mura","murar","más","dá mba","use the present","mura mbeadh"];
+  D.push({id:"ma-"+i, kind:"mc", topic:"ma", prompt:esc(m.q)+"?",
+    answer:m.a, opts:shuffle([m.a].concat(pick(all.filter(function(x){return x!==m.a;}),3))), note:m.d});
+});
+
+// the conditional
+S2.CONDTABLE.rows.forEach(function(r,i){
+  [1,2].forEach(function(col){
+    if(/\//.test(r[col])) return;
+    D.push({id:"cond-"+i+"-"+col, kind:"gap", topic:"cond",
+      prompt:"Modh coinníollach: <b>"+esc(col===1?"mol":"ceannaigh")+"</b>, <b>"+esc(r[0])+"</b>",
+      answer:r[col], note:S2.CONDTABLE.mut});
+  });
+});
+S2.CONDTABLE.irreg.forEach(function(p,i){
+  if(/[(/]/.test(p[1])) return;
+  D.push({id:"condi-"+i, kind:"gap", topic:"cond",
+    prompt:"Modh coinníollach, 1ú uatha: <b>"+esc(p[0])+"</b>",
+    answer:p[1], note:"Briathra neamhrialta: "+S2.CONDTABLE.irreg.map(function(q){return q[0]+" → "+q[1];}).join("; ")});
+});
+
+// written vs spoken
+S2.REDUX.forEach(function(r,i){
+  if(r[0]===r[1]) return;
+  D.push({id:"red-"+i, kind:"gap", topic:"redux",
+    prompt:"Cad é an fhoirm <b>scríofa</b> de <b>"+esc(r[1])+"</b>?",
+    answer:r[0], note:r[2]});
+});
+
+// Ulster vs standard
+S2.ULST.forEach(function(r,i){
+  D.push({id:"ul-"+i, kind:"gap", topic:"ulst",
+    prompt:"Foirm an <b>Chaighdeáin</b> ar <b>"+esc(r[0])+"</b> <span class='muted'>("+esc(r[2])+")</span>?",
+    answer:r[1], note:"Ulaidh: "+r[0]+" · Caighdeán: "+r[1]+" — "+r[2]});
+  D.push({id:"ulr-"+i, kind:"gap", topic:"ulst",
+    prompt:"Foirm <b>Uladh</b> ar <b>"+esc(r[1])+"</b> <span class='muted'>("+esc(r[2])+")</span>?",
+    answer:r[0], note:"Ulaidh: "+r[0]+" · Caighdeán: "+r[1]+" — "+r[2]});
+});
+
+// structures marked for drilling
+STRUCT.forEach(function(f){
+  f.rows.forEach(function(rw,i){
+    if(rw[2]!=="d"||rw[0].indexOf("—")>-1) return;
+    // strip the parenthetical grammar gloss — it makes a poor translation prompt
+    var en=rw[1].replace(/\s*\([^)]*\)\s*$/,"").trim();
+    if(!en) return;
+    D.push({id:"str-"+f.id+"-"+i, kind:"trans", topic:"struct",
+      prompt:"Cuir Gaeilge air: <b>"+esc(en)+"</b>", answer:rw[0], alts:[],
+      note:f.title+" — "+f.note});
+  });
+});
+
+// vocabulary, English → Irish
+CARDS.forEach(function(c,i){
+  if(c.noq||c.ga.length>34) return;
+  D.push({id:"voc-"+i, kind:"gap", topic:"vocab", prompt:"Cuir Gaeilge air: <b>"+esc(c.en)+"</b>",
+    answer:c.ga, note:c.note||""});
+});
+
+var TOPICS=[
+  ["mock","Páipéar bréige (claonta i dtreo Sheachtain 2)"],
+  ["t4a","Tasc 4A — réamhfhocail is mothúcháin"],
+  ["t4b","Tasc 4B — má / dá / mura"],
+  ["ma","Rialacha má / dá / mura"],
+  ["prep","Patrúin na mothúchán"],
+  ["pron","Forainmneacha réamhfhoclacha"],
+  ["cond","An modh coinníollach"],
+  ["t7","Tasc 7 — tuairimí faoin chúrsa"],
+  ["t8","Tasc 8 — frásaí úsáideacha"],
+  ["struct","Struchtúir"],
+  ["ulst","Ulaidh ↔ Caighdeán"],
+  ["redux","Scríofa ↔ labhartha"],
+  ["vocab","Foclóir"],
+  ["weak","Mo lochtanna"]
+];
+var qTopic=document.getElementById("qTopic");
+TOPICS.forEach(function(t){
+  var n=t[0]==="mock"?D.length:(t[0]==="weak"?0:D.filter(function(d){return d.topic===t[0];}).length);
+  var o=document.createElement("option"); o.value=t[0];
+  o.textContent=t[1]+(t[0]==="mock"||t[0]==="weak"?"":" ("+n+")");
+  qTopic.appendChild(o);
+});
+
+/* ---------------- stats strip ---------------- */
+function drawStats(){
+  var due=CARDS.filter(dueNow).length;
+  var started=CARDS.filter(function(c){var x=S.cards[c.id];return x&&x.box>=1;}).length;
+  var learned=CARDS.filter(function(c){var x=S.cards[c.id];return x&&x.box>=3;}).length;
+  var weak=Object.keys(S.drills).filter(function(k){var x=S.drills[k];return x.no>x.ok;}).length+
+           CARDS.filter(function(c){var x=S.cards[c.id];return x&&x.box===0&&x.wrong>0;}).length;
+  var tot=S.right+S.wrong;
+  document.getElementById("stats").innerHTML=
+    "<span><b>"+CARDS.length+"</b> cárta · <b>"+D.length+"</b> ceist</span>"+
+    "<span><b>"+due+"</b> le déanamh inniu</span>"+
+    "<span><b>"+started+"</b> tosaithe · <b>"+learned+"</b> ar eolas</span>"+
+    "<span><b>"+weak+"</b> le hathdhéanamh</span>"+
+    "<span>Inniu: <b class='y'>"+S.right+"</b> ceart · <b class='n'>"+S.wrong+"</b> mícheart"+
+      (tot?" · <b>"+Math.round(S.right/tot*100)+"%</b>":"")+"</span>"+
+    (tot?"<button class='rs' id='rsDay'>glan an lá</button>":"");
+  var rs=document.getElementById("rsDay");
+  if(rs) rs.onclick=function(){S.right=0;S.wrong=0;save();drawStats();};
+}
+/* the little ✓ n · ✗ n badge used inside both tabs */
+function sess(r,w){return "<span class='sess'><b class='y'>✓ "+r+"</b> · <b class='n'>✗ "+w+"</b></span>";}
+
+/* ---------------- tabs ---------------- */
+var TABS=["scrudu","cartai","focloir","struct","notai"];
+document.getElementById("nav").addEventListener("click",function(e){
+  var b=e.target.closest("button[data-tab]"); if(!b) return;
+  TABS.forEach(function(t){document.getElementById(t).hidden=(t!==b.dataset.tab);});
+  Array.prototype.forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-selected",String(x===b));});
+  window.scrollTo(0,0);
+});
+
+/* ================= SCRÚDÚ ================= */
+var qArea=document.getElementById("qArea"), Q=[], qi=0, qscore=0, qwrong=0;
+function buildSet(topic,len){
+  var pool;
+  if(topic==="mock"){
+    var want={t4a:3,t4b:3,cond:3,prep:3,t7:2,t8:2,ma:2,pron:2,ulst:2,redux:1,struct:2,vocab:3};
+    pool=[]; Object.keys(want).forEach(function(k){
+      pool=pool.concat(pick(D.filter(function(d){return d.topic===k;}),want[k]));
+    });
+    pool=shuffle(pool);
+  }else if(topic==="weak"){
+    pool=D.filter(function(d){var x=S.drills[d.id];return x&&x.no>x.ok;});
+    if(!pool.length) pool=D.filter(function(d){return !S.drills[d.id];});
+    pool=shuffle(pool);
+  }else{
+    pool=shuffle(D.filter(function(d){return d.topic===topic;}));
+  }
+  return len>0?pool.slice(0,len):pool;
+}
+function startQuiz(){
+  Q=buildSet(qTopic.value,parseInt(document.getElementById("qLen").value,10));
+  qi=0;qscore=0;qwrong=0;
+  if(!Q.length){qArea.innerHTML="<div class='panel'><p class='muted'>Níl ceist ar bith ann don roghnú sin — bain triail as ábhar eile.</p></div>";return;}
+  drawQ();
+}
+document.getElementById("qStart").onclick=startQuiz;
+/* changing either dropdown rebuilds the set straight away, so the control
+   never looks like it did nothing */
+qTopic.onchange=startQuiz;
+document.getElementById("qLen").onchange=startQuiz;
+function drawQ(){
+  if(qi>=Q.length){
+    var pc=Math.round(qscore/Q.length*100);
+    qArea.innerHTML="<div class='panel' style='text-align:center'><p class='lbl'>Críochnaithe</p><p class='big'>"+qscore+" / "+Q.length+"</p>"+
+      "<p class='muted'>"+pc+"%</p><div class='row' style='justify-content:center;margin-top:12px'>"+
+      "<button class='btn' id='qAgain'>Arís</button>"+
+      "<button class='btn alt' id='qWeak'>Cleacht na lochtanna</button></div></div>";
+    document.getElementById("qAgain").onclick=function(){qi=0;qscore=0;qwrong=0;Q=shuffle(Q);drawQ();};
+    document.getElementById("qWeak").onclick=function(){qTopic.value="weak";document.getElementById("qStart").click();};
+    return;
+  }
+  var d=Q[qi];
+  var h="<div class='panel'><div class='meter'><i style='width:"+(qi/Q.length*100)+"%'></i></div>"+
+    "<p class='lbl' style='display:flex;justify-content:space-between;gap:10px'>"+
+      "<span>Ceist "+(qi+1)+" / "+Q.length+" · "+esc((TOPICS.filter(function(t){return t[0]===d.topic;})[0]||["",d.topic])[1].split(" — ")[0])+"</span>"+
+      sess(qscore,qwrong)+"</p>"+
+    "<p class='ga' style='font-size:1.14rem;margin:4px 0 14px'>"+d.prompt+"</p>";
+  if(d.kind==="mc"){
+    h+="<div class='row' id='qOpts' style='flex-direction:column;align-items:stretch'>"+
+       d.opts.map(function(o){return "<button class='btn alt opt' data-v=\""+esc(o)+"\" style='text-align:left'>"+esc(o)+"</button>";}).join("")+"</div>";
+  }else{
+    h+="<input type='text' id='qIn' autocomplete='off' autocapitalize='off' spellcheck='false' placeholder='"+(d.kind==="trans"?"scríobh an abairt…":"freagra…")+"'>"+
+       "<div class='row' style='margin-top:10px'><button class='btn' id='qGo'>Seiceáil</button>"+
+       "<button class='btn alt' id='qSkip'>Taispeáin</button></div>";
+  }
+  h+="<div id='qFb'></div></div>";
+  qArea.innerHTML=h;
+  if(d.kind==="mc"){
+    qArea.querySelector("#qOpts").addEventListener("click",function(e){
+      var b=e.target.closest("button.opt"); if(!b) return;
+      judge(d,b.dataset.v,true);
+    });
+  }else{
+    var inp=document.getElementById("qIn"); inp.focus();
+    inp.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();judge(d,inp.value,true);}});
+    document.getElementById("qGo").onclick=function(){judge(d,inp.value,true);};
+    document.getElementById("qSkip").onclick=function(){judge(d,"",false,true);};
+  }
+}
+function judge(d,given,count,reveal){
+  var ok=!reveal&&matches(given,d.answer,d.alts);
+  var x=S.drills[d.id]||(S.drills[d.id]={ok:0,no:0});
+  if(!reveal){ if(ok){x.ok++;qscore++;}else{x.no++;qwrong++;} score(ok); save(); drawStats(); }
+  var fb=document.getElementById("qFb");
+  var all=[d.answer].concat(d.alts||[]);
+  fb.innerHTML="<div class='fb "+(ok?"y":"n")+"'>"+(ok?"Ceart.":(reveal?"Freagra:":"Ní raibh sin ceart."))+
+    (ok?"":" <b class='ga'>"+esc(d.answer)+"</b>")+"</div>"+
+    (all.length>1?"<p class='muted' style='margin:6px 0 0'>Leaganacha eile inghlactha: "+all.slice(1).map(esc).join(" · ")+"</p>":"")+
+    (d.note?"<div class='note'>"+esc(d.note)+"</div>":"")+
+    "<div class='row' style='margin-top:12px'><button class='btn' id='qNext'>Ar aghaidh</button>"+
+    (!ok&&!reveal?"<button class='btn alt' id='qMine'>Bhí mo cheann ceart</button>":"")+"</div>";
+  var next=function(){qi++;drawQ();};
+  document.getElementById("qNext").onclick=next;
+  var mine=document.getElementById("qMine");
+  if(mine) mine.onclick=function(){
+    var y=S.drills[d.id]; y.no--; y.ok++; qscore++; qwrong--;
+    S.wrong=Math.max(0,S.wrong-1); S.right++; save(); drawStats(); next();
+  };
+  // lock the inputs, then park focus on Ar aghaidh so Enter carries you on
+  Array.prototype.forEach.call(qArea.querySelectorAll("#qOpts button,#qGo,#qSkip,#qIn"),function(el){el.disabled=true;});
+  document.getElementById("qNext").focus();
+}
+
+/* ================= CÁRTAÍ ================= */
+var cArea=document.getElementById("cArea"), deck=[], di=0, shown=false,
+    cRight=0, cWrong=0, curDir="ge", cDeckSel=document.getElementById("cDeck");
+(function(){
+  var opts=[["all","Uile ("+CARDS.length+")"],["due","Le déanamh inniu"],["weak","Lochtanna"],
+            ["s2","Seachtain 2"],["str","Struchtúir"],["lst","An liosta foclóra"]];
+  Object.keys(CATS).forEach(function(k){
+    var n=CARDS.filter(function(c){return c.cat===k;}).length;
+    if(n) opts.push(["cat:"+k,CATS[k].name+" ("+n+")"]);
+  });
+  opts.forEach(function(o){var e=document.createElement("option");e.value=o[0];e.textContent=o[1];cDeckSel.appendChild(e);});
+})();
+function buildDeck(v){
+  if(v==="all") return shuffle(CARDS);
+  if(v==="due") return shuffle(CARDS.filter(dueNow));
+  if(v==="weak") return shuffle(CARDS.filter(function(c){var x=S.cards[c.id];return x&&x.wrong>0;}));
+  if(v.indexOf("cat:")===0) return shuffle(CARDS.filter(function(c){return c.cat===v.slice(4);}));
+  return shuffle(CARDS.filter(function(c){return c.src===v;}));
+}
+function setDir(){
+  var v=document.getElementById("cDir").value;
+  curDir = v==="mix" ? (Math.random()<.5?"ge":"eg") : v;
+}
+function startDeck(){
+  deck=buildDeck(cDeckSel.value); di=0; shown=false; cRight=0; cWrong=0; setDir();
+  if(!deck.length){
+    var v=cDeckSel.value, msg;
+    if(v==="weak") msg="Níl locht ar bith agat fós — déan roinnt cártaí ar dtús agus líonfaidh an deic seo í féin.";
+    else if(v==="due") msg="Níl cárta ar bith dlite inniu. Bain triail as <b>Uile</b>, nó fill ar ais amárach.";
+    else msg="Tá an deic sin folamh. Bain triail as <b>Uile</b>.";
+    cArea.innerHTML="<div class='panel'><p class='muted'>"+msg+"</p></div>";
+    return;
+  }
+  drawCard();
+}
+document.getElementById("cStart").onclick=startDeck;
+/* changing the deck restarts; changing the direction just redraws the card
+   you are on, so you do not lose your place */
+cDeckSel.onchange=startDeck;
+document.getElementById("cDir").onchange=function(){
+  if(!deck.length) return;
+  setDir(); drawCard();
+};
+function drawCard(){
+  if(di>=deck.length){
+    var tot=cRight+cWrong;
+    cArea.innerHTML="<div class='panel' style='text-align:center'><p class='lbl'>Deic críochnaithe</p>"+
+      "<p class='big'><span style='color:var(--ok)'>"+cRight+"</span> / "+deck.length+"</p>"+
+      "<p class='muted'>"+(tot?Math.round(cRight/tot*100)+"% ceart · ":"")+cWrong+" le hathdhéanamh</p>"+
+      "<div class='row' style='justify-content:center;margin-top:12px'>"+
+      "<button class='btn' id='cAgain'>Deic nua</button>"+
+      (cWrong?"<button class='btn alt' id='cWeakD'>Cleacht na lochtanna</button>":"")+"</div></div>";
+    document.getElementById("cAgain").onclick=startDeck;
+    var cw=document.getElementById("cWeakD");
+    if(cw) cw.onclick=function(){cDeckSel.value="weak";startDeck();};
+    return;
+  }
+  var c=deck[di], dir=curDir;
+  var front=dir==="ge"?c.ga:c.en, back=dir==="ge"?c.en:c.ga;
+  var x=S.cards[c.id];
+  var h="<div class='panel'><div class='meter'><i style='width:"+(di/deck.length*100)+"%'></i></div>"+
+    "<p class='lbl' style='display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap'>"+
+    "<span>"+(di+1)+" / "+deck.length+" · bosca "+(x?x.box:0)+(c.fam?" · "+esc(c.fam):"")+"</span>"+
+    sess(cRight,cWrong)+"</p></div>"+
+    "<div class='card'><div class='q "+(dir==="ge"?"ga":"")+"'>"+esc(front)+"</div>";
+  if(shown){
+    h+="<div class='a "+(dir==="eg"?"ga":"")+"'>"+esc(back)+"</div>";
+    if(c.note) h+="<div class='note' style='text-align:left'>"+esc(c.note)+"</div>";
+  }
+  h+="</div><div class='row' style='margin-top:12px;justify-content:center'>";
+  if(!shown){ h+="<button class='btn' id='cShow'>Taispeáin</button>"; }
+  else{ h+="<button class='btn no' id='cNo'>Arís</button><button class='btn ok' id='cYes'>Bhí sin agam</button>"; }
+  h+="</div><p class='kbd'><b>space</b> taispeáin · <b>1</b> arís · <b>2</b> bhí sin agam</p>";
+  cArea.innerHTML=h;
+  if(!shown){ document.getElementById("cShow").onclick=reveal; }
+  else{
+    document.getElementById("cNo").onclick=function(){mark(false);};
+    document.getElementById("cYes").onclick=function(){mark(true);};
+  }
+}
+function reveal(){shown=true;drawCard();}
+function mark(ok){
+  grade(deck[di].id,ok);
+  if(ok) cRight++; else cWrong++;
+  di++; shown=false; setDir(); drawCard();
+}
+document.addEventListener("keydown",function(e){
+  if(document.getElementById("cartai").hidden) return;
+  if(/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
+  if(!deck.length||di>=deck.length) return;
+  if(e.key===" "){e.preventDefault(); if(!shown) reveal();}
+  else if(shown&&(e.key==="1"||e.key.toLowerCase()==="j")){e.preventDefault();mark(false);}
+  else if(shown&&(e.key==="2"||e.key.toLowerCase()==="k")){e.preventDefault();mark(true);}
+});
+
+/* ================= FOCLÓIR ================= */
+var fq=document.getElementById("fQ"), fcat="", fList=document.getElementById("fList"), fCount=document.getElementById("fCount");
+(function(){
+  var box=document.getElementById("fCats");
+  var mk=function(k,label){
+    var b=document.createElement("button");
+    b.className="chip"; b.textContent=label; b.dataset.k=k;
+    b.setAttribute("aria-pressed",String(k===""));
+    box.appendChild(b);
+  };
+  mk("","Uile");
+  mk("src:s2","Seachtain 2");
+  Object.keys(CATS).forEach(function(k){
+    var n=CARDS.filter(function(c){return c.cat===k;}).length;
+    if(n) mk(k,CATS[k].name);
+  });
+  box.addEventListener("click",function(e){
+    var b=e.target.closest(".chip"); if(!b) return;
+    fcat=b.dataset.k;
+    Array.prototype.forEach.call(box.querySelectorAll(".chip"),function(x){x.setAttribute("aria-pressed",String(x===b));});
+    drawF();
+  });
+})();
+fq.addEventListener("input",drawF);
+function drawF(){
+  var q=norm(fq.value);
+  var list=CARDS.filter(function(c){
+    if(fcat==="src:s2"){ if(c.src!=="s2"&&c.src!=="str") return false; }
+    else if(fcat&&c.cat!==fcat) return false;
+    if(!q) return true;
+    return norm(c.ga).indexOf(q)>-1||norm(c.en).indexOf(q)>-1||(c.note&&norm(c.note).indexOf(q)>-1);
+  });
+  fCount.textContent=list.length+" iontráil";
+  if(!list.length){fList.innerHTML="<p class='muted'>Gan toradh.</p>";return;}
+  fList.innerHTML=list.slice(0,400).map(function(c,i){
+    return "<div class='ent'><div class='hdr' data-i='"+i+"'>"+
+      "<span class='ga'>"+esc(c.ga)+"</span><span class='en'>"+esc(c.en)+"</span>"+
+      "<span class='tag"+(c.src!=="lst"?" s2":"")+"'>"+esc(c.src==="s2"?"S2":(c.src==="str"?"struct":(CATS[c.cat]?CATS[c.cat].name:c.cat)))+"</span></div>"+
+      (c.note?"<div class='note' hidden>"+esc(c.note)+"</div>":"")+
+      (c.see?"<div class='chips' hidden>"+c.see.map(function(s){return "<button class='chip see'>"+esc(s)+"</button>";}).join("")+"</div>":"")+
+      "</div>";
+  }).join("")+(list.length>400?"<p class='muted'>…agus "+(list.length-400)+" eile. Cúngaigh an cuardach.</p>":"");
+}
+fList.addEventListener("click",function(e){
+  var see=e.target.closest(".chip.see");
+  if(see){ fq.value=see.textContent; fcat="";
+    Array.prototype.forEach.call(document.querySelectorAll("#fCats .chip"),function(x){x.setAttribute("aria-pressed",String(x.dataset.k===""));});
+    drawF(); window.scrollTo(0,0); return; }
+  var h=e.target.closest(".hdr"); if(!h) return;
+  Array.prototype.forEach.call(h.parentNode.querySelectorAll(".note,.chips"),function(el){el.hidden=!el.hidden;});
+});
+drawF();
+
+/* ================= STRUCHTÚIR ================= */
+document.getElementById("sList").innerHTML=STRUCT.map(function(f){
+  return "<details><summary>"+esc(f.title)+"</summary><div>"+
+    "<p class='frame'>"+esc(f.frame)+"</p>"+
+    "<p class='muted' style='margin:0 0 6px'>"+esc(f.gloss)+"</p>"+
+    tableHTML(["Gaeilge","Béarla"],f.rows.map(function(r){return [r[0],r[1]];}))+
+    "<div class='note'>"+esc(f.note)+"</div>"+
+    "<button class='btn alt sm sdrill' data-f='"+esc(f.id)+"' style='margin-top:10px'>Cleacht "+esc(f.title)+"</button>"+
+    "</div></details>";
+}).join("");
+document.getElementById("sList").addEventListener("click",function(e){
+  var b=e.target.closest(".sdrill"); if(!b) return;
+  var fam=b.dataset.f;
+  Q=shuffle(D.filter(function(d){return d.id.indexOf("str-"+fam+"-")===0;}));
+  if(!Q.length){ Q=shuffle(D.filter(function(d){return d.topic==="struct";})).slice(0,12); }
+  qi=0;qscore=0;qwrong=0;
+  TABS.forEach(function(t){document.getElementById(t).hidden=(t!=="scrudu");});
+  Array.prototype.forEach.call(document.querySelectorAll("#nav button"),function(x){x.setAttribute("aria-selected",String(x.dataset.tab==="scrudu"));});
+  window.scrollTo(0,0); drawQ();
+});
+
+/* ================= NÓTAÍ ================= */
+(function(){
+  var h="";
+  h+="<h2>Téama na seachtaine</h2><div class='panel'>"+
+    "<p>Siuán Ní Mhaonaigh agus Antain Mac Lochlainn ar an difear idir an rud a <b>scríobhtar</b> agus an rud a <b>deirtear</b>. Trí phointe ó Antain:</p>"+
+    "<ol><li><b>Na forainmneacha</b> — bíonn síneadh fada orthu sa scríobh i gcónaí, ach is gairid a fhuaimnítear iad, go háirithe agus an forainm mar chuspóir: <i>a dúirt me</i>, <i>Cuirfidh me scairt ort</i>, <i>An Gleann inar Tógadh Me</i>.</li>"+
+    "<li><b>An t-alt</b> — scríobhtar an <i>n</i> i gcónaí ach ní chluintear é idir dhá fhocal: <i>oifig a' phoist</i>, <i>fear a' tí</i>. Mhair sé sna logainmneacha Béarla: Limavady, Portaferry.</li>"+
+    "<li><b>An réamhfhocal <i>ag</i></b> — cluintear an <i>g</i> roimh ghuta (<i>ag ól</i>, <i>ag éisteacht</i>) ach titeann sé roimh chonsan (<i>a' siúl</i>, <i>a' teacht</i>).</li></ol>"+
+    "<div class='note'>An phunchline: tá <i>Chonaic mé fear an tí ag teacht chun an bhaile</i> ceart ó thaobh gramadaí de, agus níor dhúirt duine ar bith riamh é. Sin téama na seachtaine ar fad.</div></div>";
+
+  h+="<h2>Scríofa ↔ labhartha</h2><div class='panel'><p class='muted'>Scríobh an colún ar chlé; bí ag dúil leis an gceann ar dheis.</p>"+
+    tableHTML(["Scríofa","Cluinte","Céard a tharla"],S2.REDUX)+"</div>";
+
+  h+="<h2>Ulaidh ↔ an Caighdeán</h2><div class='panel'><p class='muted'>Bí comhsheasmhach: roghnaigh foirmeacha Uladh agus fan leo. Is é an meascán a chailleann marcanna.</p>"+
+    tableHTML(["Ulaidh","Caighdeán","Brí"],S2.ULST)+"</div>";
+
+  h+="<h2>Má / dá / mura</h2><div class='panel'>"+
+    tableHTML(["Cás","Foirm","Nóta"],S2.MARULES.map(function(m){return [m.q,m.a,m.d];}))+
+    "<div class='note'>An tástáil thapa: más féidir \"if … were\" a rá i mBéarla, teastaíonn <b>dá</b>; más \"if … is / was\" atá ann, teastaíonn <b>má</b>.</div></div>";
+
+  h+="<h2>Patrúin na mothúchán</h2><div class='panel'><p class='muted'>Suíonn an mothúchán <i>ort</i> mar ainmfhocal. Caithfear an dara réamhfhocal a fhoghlaim de ghlanmheabhair — níl sé intuartha.</p>"+
+    tableHTML(["Patrún","Brí","Sampla"],S2.PREPSET.map(function(p){
+      return [p.n+" "+p.p1+" X"+(p.p2?" "+p.p2+" Y":""),p.en,p.ex];}))+"</div>";
+
+  h+="<h2>An modh coinníollach</h2><div class='panel'>"+
+    tableHTML(S2.CONDTABLE.heads,S2.CONDTABLE.rows)+
+    "<div class='note'>"+esc(S2.CONDTABLE.mut)+"</div>"+
+    "<h3>Briathra neamhrialta</h3>"+
+    tableHTML(["Briathar","1ú uatha"],S2.CONDTABLE.irreg)+"</div>";
+
+  h+="<h2>Tasc 5 — an sliocht</h2><div class='panel'>"+
+    S2.T5PASSAGE.map(function(p){
+      return "<h3>"+esc(p.who)+"</h3><p class='ga'>"+esc(p.ga)+"</p><p class='en'>"+esc(p.en)+"</p>"+
+             "<ul class='muted'>"+p.forms.map(function(f){return "<li>"+esc(f)+"</li>";}).join("")+"</ul>";
+    }).join("<hr style='border:0;border-top:1px solid var(--line2);margin:14px 0'>")+"</div>";
+
+  h+="<h2>Tasc 6 — ceisteanna plé</h2>"+
+    S2.T6.map(function(q,i){
+      return "<details><summary>"+(i+1)+". "+esc(q.en)+"</summary><div>"+
+        "<p class='ga'>"+esc(q.ga)+"</p><div class='note'>"+esc(q.note)+"</div>"+
+        "<h3>Frásaí le tosú</h3><ul>"+q.bank.map(function(b){return "<li class='ga'>"+esc(b)+"</li>";}).join("")+"</ul></div></details>";
+    }).join("");
+
+  h+="<h2>Na modúil</h2><div class='panel'>"+tableHTML(["Gaeilge","Béarla","Clúdach"],S2.MODULES)+
+    "<div class='note'>Peig (1936), dírbheathaisnéis Pheig Sayers ón Bhlascaod Mór, a bhí mar théacs scoile ar feadh na mblianta. Tháinig an t-ainm chun bheith ina argóint aon-fhocail i ndíospóireachtaí faoin gcuraclam — cé go ndéarfadh scoláirí gur saothar béaloidis den scoth atá ann agus gurbh é an teagasc an fhadhb.</div></div>";
+
+  h+="<h2>Tasc 7 — tuairimí</h2><div class='panel'>"+
+    tableHTML(["Béarla","Gaeilge"],S2.T7.map(function(t){return [t.en,t.a];}))+"</div>";
+
+  h+="<h2>Tasc 8 — frásaí</h2><div class='panel'>"+
+    tableHTML(["Béarla","Gaeilge"],S2.T8.map(function(t){return [t.en,t.a];}))+"</div>";
+
+  h+="<h2>Seiceáil — iontrálacha le cinntiú</h2><div class='panel'>"+
+    "<p class='muted'>Fiche iontráil ón liosta foclóra ar fiú ceist a chur ort féin nó ar an teagascóir fúthu. Níl ceann ar bith díobh ina bhotún cinnte — ach tá gach ceann amhrasach.</p>"+
+    FIXL.map(function(f){
+      return "<div class='ent'><div class='hdr'><span class='ga' style='flex:1'>"+esc(f.text)+"</span><span class='tag'>"+esc(f.where)+"</span></div><div class='note'>"+esc(f.note)+"</div></div>";
+    }).join("")+"</div>";
+
+  h+="<p class='src'>Foinsí: bileog ranga IRS139 Seachtain 2 (Mír 5, Céim Ar Aghaidh — ceimaraghaidh.ie); do liosta foclóra féin. Tá na foirmeacha caighdeánacha curtha le hais fhoirmeacha Uladh tríd síos.</p>";
+  document.getElementById("nList").innerHTML=h;
+  // make every table scrollable on narrow screens is handled by .tw wrappers
+})();
+
+document.getElementById("wipe").onclick=function(){
+  if(!window.confirm("Gach bosca, gach locht agus comhaireamh an lae a ghlanadh? Ní féidir é a chur ar ais.")) return;
+  S={cards:{},drills:{},day:today(),right:0,wrong:0};
+  deck=[]; cArea.innerHTML=""; save(); drawStats();
+};
+
+drawStats();
+startQuiz();
+})();
+</script>
+</body>
+</html>
